@@ -31,7 +31,6 @@
         <%= link_to 'About', about_path %>
       </div>
     </header>
-
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -44,9 +43,9 @@
           </div>
           <%= simple_form_for Quote.new do |f| %>
             <div class="modal-body">
-              <%= f.input :saying, label: "What is the saying you want to add?", placeholder: "Fear is the disease. Hustle is the antidote." %>
+              <%= f.input :saying, label: "What is the saying you want to add?", placeholder: "In all things of nature, there is something of the marvelous." %>
               <br />
-              <%= f.input :author, label: "Who is the author of the quote?", placeholder: "Travis Kalanick" %>
+              <%= f.input :author, label: "Who is the author of the quote?", placeholder: "Aristotle" %>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
